@@ -17,6 +17,8 @@ describe User do
   it { should respond_to(:remember_token) }
   it { should respond_to(:admin) }
   it { should respond_to(:authenticate) }
+  it { should respond_to(:garments) }
+  it { should respond_to(:feed) }
 
   it { should be_valid }
   it { should_not be_admin }
@@ -119,5 +121,38 @@ describe User do
   describe "remember token" do
     before { @user.save }
     its(:remember_token) { should_not be_blank }
+  end
+
+  describe "garment associations" do
+    
+    before { @user.save }
+    let!(:older_garment) do
+      FactoryGirl.create(:garment, user: @user, created_at: 1.day.ago)
+    end
+    let!(:newer_garment) do
+      FactoryGirl.create(:garment, user: @user, created_at: 1.hour.ago)
+    end
+
+    it "should have the right garments in the right order" do
+      @user.garments.should == [newer_garment, older_garment] 
+    end
+
+    it "should destroy associated garments" do
+      garments = @user.garments
+      @user.destroy
+      garments.each do |garment|
+        Garment.find_by_id(garment.id).should be_nil
+      end
+    end
+
+    describe "status" do
+      let(:unfollowed_garment) do
+        FactoryGirl.create(:garment, user: FactoryGirl.create(:user))
+      end
+
+      its(:feed) { should include(newer_garment) }
+      its(:feed) { should include(older_garment) }
+      its(:feed) { should_not include(unfollowed_garment) }
+    end
   end
 end
