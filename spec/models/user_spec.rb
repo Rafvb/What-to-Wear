@@ -17,7 +17,7 @@ describe User do
   it { should respond_to(:remember_token) }
   it { should respond_to(:admin) }
   it { should respond_to(:authenticate) }
-  it { should respond_to(:garments) }
+  it { should respond_to(:items) }
   it { should respond_to(:feed) }
   it { should respond_to(:relationships) }
   it { should respond_to(:followed_users) }
@@ -129,45 +129,47 @@ describe User do
     its(:remember_token) { should_not be_blank }
   end
 
-  describe "garment associations" do
+  describe "item associations" do
     
     before { @user.save }
-    let!(:older_garment) do
-      FactoryGirl.create(:garment, user: @user, created_at: 1.day.ago)
+    let!(:older_item) do
+      FactoryGirl.create(:item, user: @user, created_at: 1.day.ago)
     end
-    let!(:newer_garment) do
-      FactoryGirl.create(:garment, user: @user, created_at: 1.hour.ago)
-    end
-
-    it "should have the right garments in the right order" do
-      @user.garments.should == [newer_garment, older_garment] 
+    let!(:newer_item) do
+      FactoryGirl.create(:item, user: @user, created_at: 1.hour.ago)
     end
 
-    it "should destroy associated garments" do
-      garments = @user.garments
+    it "should have the right items in the right order" do
+      @user.items.should == [newer_item, older_item]
+    end
+
+    it "should destroy associated items" do
+      items = @user.items
       @user.destroy
-      garments.each do |garment|
-        Garment.find_by_id(garment.id).should be_nil
+      items.each do |item|
+        Item.find_by_id(item.id).should be_nil
       end
     end
 
     describe "status" do
-      let(:unfollowed_garment) do
-        FactoryGirl.create(:garment, user: FactoryGirl.create(:user))
+      let(:unfollowed_item) do
+        FactoryGirl.create(:item, user: FactoryGirl.create(:user))
       end
       let(:followed_user) { FactoryGirl.create(:user) }
 
       before do
         @user.follow!(followed_user)
-        3.times { followed_user.garments.create!(description: "Lorem ipsum") }
+        3.times { followed_user.items.create!(description: "Lorem ipsum",
+                                              date_bought: 1.day.ago,
+                                              price: 9.99) }
       end
 
-      its(:feed) { should include(newer_garment) }
-      its(:feed) { should include(older_garment) }
-      its(:feed) { should_not include(unfollowed_garment) }
+      its(:feed) { should include(newer_item) }
+      its(:feed) { should include(older_item) }
+      its(:feed) { should_not include(unfollowed_item) }
       its(:feed) do
-        followed_user.garments.each do |garment|
-          should include(garment)
+        followed_user.items.each do |item|
+          should include(item)
         end
       end
     end

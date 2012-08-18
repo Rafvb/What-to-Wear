@@ -26,7 +26,7 @@ describe RelationshipsController do
     before { user.follow!(other_user) }
     let(:relationship) { user.relationships.find_by_followed_id(other_user) }
 
-    it "should decrement the Relataionship count" do
+    it "should decrement the Relationship count" do
       expect do
         xhr :delete, :destroy, id: relationship.id
       end.should change(Relationship, :count).by(-1)

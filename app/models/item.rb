@@ -1,12 +1,14 @@
-class Garment < ActiveRecord::Base
-  attr_accessible :brand, :description, :date_bought, :price
+class Item < ActiveRecord::Base
+  attr_accessible :description, :date_bought, :price
 
   belongs_to :user
 
   validates :description, presence: true, length: { maximum: 255 }
+  validates :date_bought, presence: true
+  validates :price,       presence: true
   validates :user_id,     presence: true
 
-  default_scope order: 'garments.created_at DESC'
+  default_scope order: 'items.created_at DESC'
 
   def self.from_user_followed_by(user)
     followed_user_ids = "SELECT followed_id FROM relationships

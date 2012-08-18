@@ -81,18 +81,18 @@ describe "User Pages" do
 
   describe "profile page" do
     let(:user) { FactoryGirl.create(:user) }
-    let!(:g1) { FactoryGirl.create(:garment, user: user, description: "Foo") }
-    let!(:g2) { FactoryGirl.create(:garment, user: user, description: "Bar") }
+    let!(:item1) { FactoryGirl.create(:item, user: user, description: "Foo") }
+    let!(:item2) { FactoryGirl.create(:item, user: user, description: "Bar") }
 
     before { visit user_path(user) }
 
     it { should have_selector('h1',    text: user.name) }
     it { should have_selector('title', text: user.name) }
 
-    describe "garments" do
-      it { should have_content(g1.description) }
-      it { should have_content(g2.description) }
-      it { should have_content(user.garments.count) }
+    describe "items" do
+      it { should have_content(item1.description) }
+      it { should have_content(item2.description) }
+      it { should have_content(user.items.count) }
     end
 
     describe "follow/unfollow buttons" do

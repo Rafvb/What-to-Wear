@@ -1,11 +1,11 @@
-class GarmentsController < ApplicationController
+class ItemsController < ApplicationController
   before_filter :signed_in_user, only: [:create, :destroy]
   before_filter :correct_user,   only: :destroy
 
   def create
-    @garment = current_user.garments.build(params[:garment])
-    if @garment.save
-      flash[:success] = "Garment created!"
+    @item = current_user.items.build(params[:item])
+    if @item.save
+      flash[:success] = "Item created!"
       redirect_to root_path
     else
       @feed_items = []
@@ -14,14 +14,14 @@ class GarmentsController < ApplicationController
   end
 
   def destroy
-    @garment.destroy
+    @item.destroy
     redirect_to root_path
   end
 
   private
 
     def correct_user
-      @garment = current_user.garments.find_by_id(params[:id])
-      redirect_to root_path if @garment.nil?
+      @item = current_user.items.find_by_id(params[:id])
+      redirect_to root_path if @item.nil?
     end
 end

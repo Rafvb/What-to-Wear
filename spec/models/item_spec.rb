@@ -1,18 +1,16 @@
 require 'spec_helper'
 
-describe Garment do
+describe Item do
 
   let(:user) { FactoryGirl.create(:user) }
   before do
-    @garment = user.garments.build(brand: "Esprit", 
-                                   description: "Blue T-Shirt",
-                                   date_bought: Date.parse("2012-04-22"),
-                                   price: 9.99)
+    @item = user.items.build(description: "Blue T-Shirt",
+                             date_bought: Date.parse("2012-04-22"),
+                             price: 9.99)
   end
 
-  subject { @garment }
+  subject { @item }
 
-  it { should respond_to(:brand) }
   it { should respond_to(:description) }
   it { should respond_to(:date_bought) }
   it { should respond_to(:price) }
@@ -23,30 +21,40 @@ describe Garment do
   it { should be_valid }
   
   describe "when user_id is not present" do
-    before { @garment.user_id = nil }
+    before { @item.user_id = nil }
     it { should_not be_valid }
   end
 
   describe "accessible attributes" do
     it "should not allow access to user_id" do
       expect do
-        Garment.new(user_id: user.id)
+        Item.new(user_id: user.id)
       end.should raise_error(ActiveModel::MassAssignmentSecurity::Error)
     end
   end
 
   describe "when user_id is not present" do
-    before { @garment.user_id = nil }
+    before { @item.user_id = nil }
     it { should_not be_valid }
   end
 
   describe "with blank description" do
-    before { @garment.description = " " }
+    before { @item.description = " " }
     it { should_not be_valid }
   end
 
   describe "with description that is too long" do
-    before { @garment.description = "a" * 256 }
+    before { @item.description = "a" * 256 }
+    it { should_not be_valid }
+  end
+
+  describe "with date bought nil" do
+    before { @item.date_bought = nil }
+    it { should_not be_valid }
+  end
+
+  describe "with blank price" do
+    before { @item.price = " " }
     it { should_not be_valid }
   end
 end

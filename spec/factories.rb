@@ -10,8 +10,7 @@ FactoryGirl.define do
     end
   end
   
-  factory :garment do
-    brand "Esprit"
+  factory :item do
     description "White T-shirt"
     date_bought 1.day.ago 
     price 9.99

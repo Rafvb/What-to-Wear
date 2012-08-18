@@ -109,17 +109,17 @@ describe "Authentication" do
         end
       end
   
-      describe "in the Garments controller" do
+      describe "in the Items controller" do
         
         describe "submitting to the create action" do
-          before { post garments_path }
+          before { post items_path }
           specify { response.should redirect_to(signin_path) }
         end
 
         describe "submitting to the destroy action" do
           before do
-            garment = FactoryGirl.create(:garment)
-            delete garment_path(garment)
+            item = FactoryGirl.create(:item)
+            delete item_path(item)
           end
           specify { response.should redirect_to(signin_path) }
         end
@@ -151,7 +151,7 @@ describe "Authentication" do
         end
 
         describe "submitting a POST request to the Users#create action" do
-          before { post user_path }
+          before { post users_path }
           specify { response.should redirect_to(root_path) }
         end
       end

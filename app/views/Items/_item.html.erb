@@ -1,0 +1,13 @@
+<li>
+  <span class="description"><%= item.description %></span>
+  <span class="date_bought"><%= item.date_bought %></span>
+  <span class="price"><%= item.price %></span>
+  <span class="timestamp">
+    Added <%= time_ago_in_words(item.created_at) %> ago.
+  </span>
+  <% if current_user?(item.user) %>
+    <%= link_to "delete", item, method:  :delete,
+                                confirm: "You sure?",
+                                title:   item.description %>
+  <% end %>
+</li>
