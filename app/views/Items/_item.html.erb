@@ -1,13 +1,23 @@
 <li>
-  <span class="description"><%= item.description %></span>
-  <span class="date_bought"><%= item.date_bought %></span>
-  <span class="price"><%= item.price %></span>
-  <span class="timestamp">
-    Added <%= time_ago_in_words(item.created_at) %> ago.
-  </span>
-  <% if current_user?(item.user) %>
-    <%= link_to "delete", item, method:  :delete,
-                                confirm: "You sure?",
-                                title:   item.description %>
-  <% end %>
+  <section>
+    <% if current_user?(item.user) %>
+      <strong><span class="description"><%= item.description %></span></strong><br>
+      Brand: <span class="brand"><%= item.brand %></span><br>
+      Price: € <span class="price"><%= item.price %></span><br>
+      Bought: <span class="date_bought"><%= item.date_bought %></span><br>
+    <% else %>
+      A new Item<br>
+    <% end %>
+    <span class="timestamp">
+      Added <%= time_ago_in_words(item.created_at) %> ago.
+    </span>
+  </section>
+  <section>
+    <% if current_user?(item.user) %>
+      <%= link_to "details", item %>
+      <%= link_to "delete", item, method:  :delete,
+                                  confirm: "You sure?",
+                                  title:   item.description %>
+    <% end %>
+  </section>
 </li>

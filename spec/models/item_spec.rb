@@ -5,15 +5,17 @@ describe Item do
   let(:user) { FactoryGirl.create(:user) }
   before do
     @item = user.items.build(description: "Blue T-Shirt",
-                             date_bought: Date.parse("2012-04-22"),
-                             price: 9.99)
+                             price: 9.99,
+                             brand: "Esprit",
+                             date_bought: Date.parse("2012-04-22"))
   end
 
   subject { @item }
 
   it { should respond_to(:description) }
-  it { should respond_to(:date_bought) }
   it { should respond_to(:price) }
+  it { should respond_to(:brand) }
+  it { should respond_to(:date_bought) }
   it { should respond_to(:user_id) }
   it { should respond_to(:user) }
   its(:user) { should == user }

@@ -8,13 +8,16 @@
       <section>
         <%= render 'shared/stats' %>
       </section>
-      <section>
-        <%= render 'shared/item_form' %>
-      </section>
     </aside>
     <div class="span8">
-      <h3>Items Feed</h3>
-      <%= render 'shared/feed' %>
+      <section>
+        <h3>Your spending budget</h3>
+        <%= render 'shared/budget' %>
+      </section>
+      <section>
+        <h3>Items Feed</h3>
+        <%= render 'shared/feed' %>
+      </section>
     </div>
   </div>
 <% else %>

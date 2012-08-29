@@ -29,9 +29,13 @@ def make_items
   users = User.all(limit: 6)
   50.times do
     description = Faker::Lorem.sentence(5)
-    price = 9.99
-    date_bought = 1.day.ago
-    users.each { |user| user.items.create!(description: description) }
+    price = (1..100).to_a.shuffle[1]
+    brand = Faker::Lorem.words(2)
+    date_bought = (1..20).to_a.shuffle[1].day.ago
+    users.each { |user| user.items.create!(description: description,
+                                           price: price,
+                                           brand: brand,
+                                           date_bought: date_bought) }
   end
 end
 

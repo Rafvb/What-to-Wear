@@ -1,0 +1,11 @@
+<% provide(:title, 'Add Item') %>
+<h1>Add an Item</h1>
+
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(@item) do |f| %>
+        <%= render 'fields', f: f %>
+        <%= f.submit "Add Item", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>

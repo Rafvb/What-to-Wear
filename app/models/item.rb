@@ -1,5 +1,5 @@
 class Item < ActiveRecord::Base
-  attr_accessible :description, :date_bought, :price
+  attr_accessible :description, :date_bought, :brand, :price
 
   belongs_to :user
 

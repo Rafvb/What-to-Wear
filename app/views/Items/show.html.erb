@@ -1,0 +1,29 @@
+<% provide :title, @item.description %>
+<div class="row">
+  <div>
+      <%= link_to "Back to My Items", items_path, class: "btn btn-large btn-primary" %>
+  </div>
+  <div>
+    <h1>
+      <%= @item.description %>
+    </h1>
+    <h2>
+      <%= @item.brand %>
+    </h2>
+    <h1>
+      € <%= @item.price %>
+    </h1>
+    <h2>
+      <%= @item.date_bought %>
+    </h2>
+  </div>
+  <section>
+    <% if current_user?(@item.user) %>
+        <%= link_to "edit", edit_item_path(@item), class: "btn btn-large" %>
+        <%= link_to "delete", @item, method:  :delete,
+                                     class: "btn btn-large",
+                                     confirm: "Are you sure you want to delete ''" + @item.description + "'?",
+                                     title:   @item.description %>
+    <% end %>
+  </section>
+</div>

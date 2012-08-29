@@ -1,0 +1,7 @@
+<% @user ||= current_user %>
+<div class="budget">
+  <strong id="spending_budget" class="budget">
+    Total: <%= @user.total_spend %> € -
+    This month: <%= @user.total_spend_this_month %> €
+  </strong>
+</div>

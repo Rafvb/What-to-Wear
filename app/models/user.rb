@@ -35,6 +35,28 @@ class User < ActiveRecord::Base
     relationships.find_by_followed_id(other_user.id).destroy
   end
 
+  def total_spend
+    total = 0
+
+    self.items.each do |item|
+      total += item.price
+    end
+
+    total
+  end
+
+  def total_spend_this_month
+    total = 0
+
+    self.items.each do |item|
+      if item.date_bought.month == Time.now.month
+        total += item.price
+      end
+    end
+
+    total
+  end
+
   private
     
     def create_remember_token
