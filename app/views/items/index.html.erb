@@ -1,0 +1,12 @@
+<%= provide(:title, 'All your items') %>
+<h1>All your items</h1>
+
+<%= link_to "Add an Item", new_item_path %>
+
+<%= will_paginate %>
+
+<ul class="items">
+  <%= render @items %>
+</ul>
+
+<%= will_paginate %>

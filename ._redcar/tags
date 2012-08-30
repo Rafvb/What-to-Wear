@@ -1,0 +1,220 @@
+1346351755
+About page	C:/Sites/What-to-Wear/spec/requests/static_pages_spec.rb	describe "About page" do
+AddAdminToUsers	C:/Sites/What-to-Wear/db/migrate/20120421133004_add_admin_to_users.rb	class AddAdminToUsers 
+AddIndexToUsersEmail	C:/Sites/What-to-Wear/db/migrate/20120304080856_add_index_to_users_email.rb	class AddIndexToUsersEmail 
+AddPasswordDigestToUsers	C:/Sites/What-to-Wear/db/migrate/20120305193625_add_password_digest_to_users.rb	class AddPasswordDigestToUsers 
+AddRememberTokenToUsers	C:/Sites/What-to-Wear/db/migrate/20120413194801_add_remember_token_to_users.rb	class AddRememberTokenToUsers 
+Application	C:/Sites/What-to-Wear/config/application.rb	  class Application 
+ApplicationController	C:/Sites/What-to-Wear/app/controllers/application_controller.rb	class ApplicationController 
+ApplicationHelper	C:/Sites/What-to-Wear/app/helpers/application_helper.rb	module ApplicationHelper
+Authentication	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "Authentication" do
+Contact page	C:/Sites/What-to-Wear/spec/requests/static_pages_spec.rb	describe "Contact page" do
+CreateGarments	C:/Sites/What-to-Wear/db/migrate/20120422063604_create_garments.rb	class CreateGarments 
+CreateRelationships	C:/Sites/What-to-Wear/db/migrate/20120620185419_create_relationships.rb	class CreateRelationships 
+CreateUsers	C:/Sites/What-to-Wear/db/migrate/20120226101335_create_users.rb	class CreateUsers 
+Help page	C:/Sites/What-to-Wear/spec/requests/static_pages_spec.rb	describe "Help page" do
+Home page	C:/Sites/What-to-Wear/spec/requests/static_pages_spec.rb	describe "Home page" do
+Item	C:/Sites/What-to-Wear/app/models/item.rb	class Item 
+Item pages	C:/Sites/What-to-Wear/spec/requests/item_pages_spec.rb	describe "Item pages" do
+ItemsController	C:/Sites/What-to-Wear/app/controllers/items_controller.rb	class ItemsController 
+Relationship	C:/Sites/What-to-Wear/app/models/relationship.rb	class Relationship 
+RelationshipsController	C:/Sites/What-to-Wear/app/controllers/relationships_controller.rb	class RelationshipsController 
+RenameGarmentsToItems	C:/Sites/What-to-Wear/db/migrate/20120815134704_rename_garments_to_items.rb	class RenameGarmentsToItems 
+SessionsController	C:/Sites/What-to-Wear/app/controllers/sessions_controller.rb	class SessionsController 
+SessionsHelper	C:/Sites/What-to-Wear/app/helpers/sessions_helper.rb	module SessionsHelper
+Static Pages	C:/Sites/What-to-Wear/spec/requests/static_pages_spec.rb	describe "Static Pages" do
+StaticPagesController	C:/Sites/What-to-Wear/app/controllers/static_pages_controller.rb	class StaticPagesController 
+StaticPagesHelper	C:/Sites/What-to-Wear/app/helpers/static_pages_helper.rb	module StaticPagesHelper
+User	C:/Sites/What-to-Wear/app/models/user.rb	class User 
+User Pages	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	describe "User Pages" do
+UsersController	C:/Sites/What-to-Wear/app/controllers/users_controller.rb	class UsersController 
+UsersHelper	C:/Sites/What-to-Wear/app/helpers/users_helper.rb	module UsersHelper
+VALID_EMAIL_REGEX	C:/Sites/What-to-Wear/app/models/user.rb	  VALID_EMAIL_REGEX =
+WhatToWear	C:/Sites/What-to-Wear/config/application.rb	module WhatToWear
+about	C:/Sites/What-to-Wear/app/controllers/static_pages_controller.rb	  def about
+accessible attributes	C:/Sites/What-to-Wear/spec/models/user_spec.rb	describe "accessible attributes" do
+accessible attributes	C:/Sites/What-to-Wear/spec/models/relationship_spec.rb	describe "accessible attributes" do
+accessible attributes	C:/Sites/What-to-Wear/spec/models/item_spec.rb	describe "accessible attributes" do
+admin_user	C:/Sites/What-to-Wear/app/controllers/users_controller.rb	    def admin_user
+after saving the user	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	describe "after saving the user" do
+after signing in	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "after signing in" do
+after visiting another page	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "after visiting another page" do
+and unfollowing	C:/Sites/What-to-Wear/spec/models/user_spec.rb	describe "and unfollowing" do
+as an admin user	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	describe "as an admin user" do
+as correct user	C:/Sites/What-to-Wear/spec/requests/item_pages_spec.rb	describe "as correct user" do
+as non-admin user	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "as non-admin user" do
+as wrong user	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "as wrong user" do
+authorization	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "authorization" do
+change	C:/Sites/What-to-Wear/db/migrate/20120620185419_create_relationships.rb	  def change
+change	C:/Sites/What-to-Wear/db/migrate/20120422063604_create_garments.rb	  def change
+change	C:/Sites/What-to-Wear/db/migrate/20120421133004_add_admin_to_users.rb	  def change
+change	C:/Sites/What-to-Wear/db/migrate/20120413194801_add_remember_token_to_users.rb	  def change
+change	C:/Sites/What-to-Wear/db/migrate/20120305193625_add_password_digest_to_users.rb	  def change
+change	C:/Sites/What-to-Wear/db/migrate/20120304080856_add_index_to_users_email.rb	  def change
+change	C:/Sites/What-to-Wear/db/migrate/20120226101335_create_users.rb	  def change
+clear_return_to	C:/Sites/What-to-Wear/app/helpers/sessions_helper.rb	    def clear_return_to
+contact	C:/Sites/What-to-Wear/app/controllers/static_pages_controller.rb	  def contact
+correct_user	C:/Sites/What-to-Wear/app/controllers/users_controller.rb	    def correct_user
+correct_user	C:/Sites/What-to-Wear/app/controllers/items_controller.rb	    def correct_user
+create	C:/Sites/What-to-Wear/app/controllers/users_controller.rb	  def create
+create	C:/Sites/What-to-Wear/app/controllers/sessions_controller.rb	  def create
+create	C:/Sites/What-to-Wear/app/controllers/relationships_controller.rb	  def create
+create	C:/Sites/What-to-Wear/app/controllers/items_controller.rb	  def create
+create_remember_token	C:/Sites/What-to-Wear/app/models/user.rb	    def create_remember_token
+creating a relationship with Ajax	C:/Sites/What-to-Wear/spec/controllers/relationships_controller_spec.rb	describe "creating a relationship with Ajax" do
+current_user	C:/Sites/What-to-Wear/app/helpers/sessions_helper.rb	  def current_user
+current_user=	C:/Sites/What-to-Wear/app/helpers/sessions_helper.rb	  def current_user=(user)
+current_user?	C:/Sites/What-to-Wear/app/helpers/sessions_helper.rb	  def current_user?(user)
+delete links	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	describe "delete links" do
+destroy	C:/Sites/What-to-Wear/app/controllers/users_controller.rb	  def destroy
+destroy	C:/Sites/What-to-Wear/app/controllers/sessions_controller.rb	  def destroy
+destroy	C:/Sites/What-to-Wear/app/controllers/relationships_controller.rb	  def destroy
+destroy	C:/Sites/What-to-Wear/app/controllers/items_controller.rb	  def destroy
+destroying a relationship with Ajax	C:/Sites/What-to-Wear/spec/controllers/relationships_controller_spec.rb	describe "destroying a relationship with Ajax" do
+down	C:/Sites/What-to-Wear/db/migrate/20120815134704_rename_garments_to_items.rb	  def down
+edit	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	describe "edit" do
+edit	C:/Sites/What-to-Wear/app/controllers/users_controller.rb	  def edit
+edit	C:/Sites/What-to-Wear/app/controllers/items_controller.rb	  def edit
+error messages	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	describe "error messages" do
+error messages	C:/Sites/What-to-Wear/spec/requests/item_pages_spec.rb	describe "error messages" do
+feed	C:/Sites/What-to-Wear/app/models/user.rb	  def feed
+follow!	C:/Sites/What-to-Wear/app/models/user.rb	  def follow!(other_user)
+follow/unfollow buttons	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	describe "follow/unfollow buttons" do
+followed by signout	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "followed by signout" do
+followed user	C:/Sites/What-to-Wear/spec/models/user_spec.rb	describe "followed user" do
+followed users	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	describe "followed users" do
+follower methods	C:/Sites/What-to-Wear/spec/models/relationship_spec.rb	describe "follower methods" do
+follower/following counts	C:/Sites/What-to-Wear/spec/requests/static_pages_spec.rb	describe "follower/following counts" do
+followers	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	describe "followers" do
+followers	C:/Sites/What-to-Wear/app/controllers/users_controller.rb	  def followers
+following	C:/Sites/What-to-Wear/spec/models/user_spec.rb	describe "following" do
+following	C:/Sites/What-to-Wear/app/controllers/users_controller.rb	  def following
+following a user	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	describe "following a user" do
+following/followers	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	describe "following/followers" do
+following?	C:/Sites/What-to-Wear/app/models/user.rb	  def following?(other_user)
+for non-signed-in users	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "for non-signed-in users" do
+for signed-in users	C:/Sites/What-to-Wear/spec/requests/static_pages_spec.rb	describe "for signed-in users" do
+for signed-in users	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "for signed-in users" do
+from_user_followed_by	C:/Sites/What-to-Wear/app/models/item.rb	  def self.from_user_followed_by(user)
+full_title	C:/Sites/What-to-Wear/spec/support/utilities.rb	def full_title(page_title)
+full_title	C:/Sites/What-to-Wear/app/helpers/application_helper.rb	  def full_title(page_title)
+gravatar_for	C:/Sites/What-to-Wear/app/helpers/users_helper.rb	  def gravatar_for(user, options = { size: 50 })
+help	C:/Sites/What-to-Wear/app/controllers/static_pages_controller.rb	  def help
+home	C:/Sites/What-to-Wear/app/controllers/static_pages_controller.rb	  def home
+in the Items controller	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "in the Items controller" do
+in the Relationships controller	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "in the Relationships controller" do
+in the Users controller	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "in the Users controller" do
+in the Users controller	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "in the Users controller" do
+index	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	describe "index" do
+index	C:/Sites/What-to-Wear/app/controllers/users_controller.rb	  def index
+index	C:/Sites/What-to-Wear/app/controllers/items_controller.rb	  def index
+item associations	C:/Sites/What-to-Wear/spec/models/user_spec.rb	describe "item associations" do
+item creation	C:/Sites/What-to-Wear/spec/requests/item_pages_spec.rb	describe "item creation" do
+item destruction	C:/Sites/What-to-Wear/spec/requests/item_pages_spec.rb	describe "item destruction" do
+items	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	describe "items" do
+new	C:/Sites/What-to-Wear/app/controllers/users_controller.rb	  def new
+new	C:/Sites/What-to-Wear/app/controllers/sessions_controller.rb	  def new
+new	C:/Sites/What-to-Wear/app/controllers/items_controller.rb	  def new
+non_signed_in_user	C:/Sites/What-to-Wear/app/controllers/users_controller.rb	    def non_signed_in_user
+page	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	describe "page" do
+pagination	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	describe "pagination" do
+profile page	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	describe "profile page" do
+redirect_back_or	C:/Sites/What-to-Wear/app/helpers/sessions_helper.rb	  def redirect_back_or(default)
+remember token	C:/Sites/What-to-Wear/spec/models/user_spec.rb	describe "remember token" do
+return value of authenticate method	C:/Sites/What-to-Wear/spec/models/user_spec.rb	describe "return value of authenticate method" do
+should be able to delete another user	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	it "should be able to delete another user" do
+should create a user	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	it "should create a user" do
+should create an item	C:/Sites/What-to-Wear/spec/requests/item_pages_spec.rb	it "should create an item" do
+should decrement the Relationship count	C:/Sites/What-to-Wear/spec/controllers/relationships_controller_spec.rb	it "should decrement the Relationship count" do
+should decrement the followed user count	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	it "should decrement the followed user count" do
+should decrement the other user's followers count	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	it "should decrement the other user's followers count" do
+should delete an item	C:/Sites/What-to-Wear/spec/requests/item_pages_spec.rb	it "should delete an item" do
+should destroy associated items	C:/Sites/What-to-Wear/spec/models/user_spec.rb	it "should destroy associated items" do
+should have the right items in the right order	C:/Sites/What-to-Wear/spec/models/user_spec.rb	it "should have the right items in the right order" do
+should have the right links on the layout	C:/Sites/What-to-Wear/spec/requests/static_pages_spec.rb	it "should have the right links on the layout" do
+should increment the Relationship count	C:/Sites/What-to-Wear/spec/controllers/relationships_controller_spec.rb	it "should increment the Relationship count" do
+should increment the followed user count	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	it "should increment the followed user count" do
+should increment the other user's followers count	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	it "should increment the other user's followers count" do
+should list the first page of users	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	it "should list the first page of users" do
+should list the second page of users	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	it "should list the second page of users" do
+should not allow access to admin	C:/Sites/What-to-Wear/spec/models/user_spec.rb	it "should not allow access to admin" do
+should not allow access to follower_id	C:/Sites/What-to-Wear/spec/models/relationship_spec.rb	it "should not allow access to follower_id" do
+should not allow access to user_id	C:/Sites/What-to-Wear/spec/models/item_spec.rb	it "should not allow access to user_id" do
+should not be able to DESTROY herselve	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	it "should not be able to DESTROY herselve" do
+should not create a user	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	it "should not create a user" do
+should not create an item	C:/Sites/What-to-Wear/spec/requests/item_pages_spec.rb	it "should not create an item" do
+should not list the second page of users	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	it "should not list the second page of users" do
+should render the default (profile) page	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	it "should render the default (profile) page" do
+should render the desired protected page	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	it "should render the desired protected page" do
+should render the user's feed	C:/Sites/What-to-Wear/spec/requests/static_pages_spec.rb	it "should render the user's feed" do
+should respond with success	C:/Sites/What-to-Wear/spec/controllers/relationships_controller_spec.rb	it "should respond with success" do
+should respond with success	C:/Sites/What-to-Wear/spec/controllers/relationships_controller_spec.rb	it "should respond with success" do
+show	C:/Sites/What-to-Wear/app/controllers/users_controller.rb	  def show
+show	C:/Sites/What-to-Wear/app/controllers/items_controller.rb	  def show
+showing the second page	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	describe "showing the second page" do
+sign_in	C:/Sites/What-to-Wear/spec/support/utilities.rb	def sign_in(user)
+sign_in	C:/Sites/What-to-Wear/app/helpers/sessions_helper.rb	  def sign_in(user)
+sign_out	C:/Sites/What-to-Wear/app/helpers/sessions_helper.rb	  def sign_out
+signed_in?	C:/Sites/What-to-Wear/app/helpers/sessions_helper.rb	  def signed_in?
+signed_in_user	C:/Sites/What-to-Wear/app/helpers/sessions_helper.rb	  def signed_in_user
+signin	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "signin" do
+signin page	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "signin page" do
+signup	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	describe "signup" do
+signup page	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	describe "signup page" do
+status	C:/Sites/What-to-Wear/spec/models/user_spec.rb	describe "status" do
+store_location	C:/Sites/What-to-Wear/app/helpers/sessions_helper.rb	  def store_location
+submitting a DELETE request to the Users#destroy action	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "submitting a DELETE request to the Users#destroy action" do
+submitting a POST request to the Users#create action	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "submitting a POST request to the Users#create action" do
+submitting a PUT request to the Users#update action	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "submitting a PUT request to the Users#update action" do
+submitting to the create action	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "submitting to the create action" do
+submitting to the destroy action	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "submitting to the destroy action" do
+submitting to the destroy action	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "submitting to the destroy action" do
+submitting to the update action	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "submitting to the update action" do
+sumbitting to the create action	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "sumbitting to the create action" do
+toggling the button	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	describe "toggling the button" do
+toggling the button	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	describe "toggling the button" do
+total_spend	C:/Sites/What-to-Wear/app/models/user.rb	  def total_spend
+total_spend_this_month	C:/Sites/What-to-Wear/app/models/user.rb	  def total_spend_this_month
+unfollow!	C:/Sites/What-to-Wear/app/models/user.rb	  def unfollow!(other_user)
+unfollowing a user	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	describe "unfollowing a user" do
+up	C:/Sites/What-to-Wear/db/migrate/20120815134704_rename_garments_to_items.rb	  def up
+update	C:/Sites/What-to-Wear/app/controllers/users_controller.rb	  def update
+update	C:/Sites/What-to-Wear/app/controllers/items_controller.rb	  def update
+user_from_remember_token	C:/Sites/What-to-Wear/app/helpers/sessions_helper.rb	    def user_from_remember_token
+visiting Users#edit page	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "visiting Users#edit page" do
+visiting the edit page	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "visiting the edit page" do
+visiting the followers page	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "visiting the followers page" do
+visiting the following page	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "visiting the following page" do
+visiting the new page	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "visiting the new page" do
+visiting the user index	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "visiting the user index" do
+when attempting to visit a protected page	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "when attempting to visit a protected page" do
+when email address is already taken	C:/Sites/What-to-Wear/spec/models/user_spec.rb	describe "when email address is already taken" do
+when email address is already taken	C:/Sites/What-to-Wear/spec/models/user_spec.rb	describe "when email address is already taken" do
+when email format is invalid	C:/Sites/What-to-Wear/spec/models/user_spec.rb	describe "when email format is invalid" do
+when email format is valid	C:/Sites/What-to-Wear/spec/models/user_spec.rb	describe "when email format is valid" do
+when email is not present	C:/Sites/What-to-Wear/spec/models/user_spec.rb	describe "when email is not present" do
+when followed id is not present	C:/Sites/What-to-Wear/spec/models/relationship_spec.rb	describe "when followed id is not present" do
+when follower id is not present	C:/Sites/What-to-Wear/spec/models/relationship_spec.rb	describe "when follower id is not present" do
+when name is not present	C:/Sites/What-to-Wear/spec/models/user_spec.rb	describe "when name is not present" do
+when name is too long	C:/Sites/What-to-Wear/spec/models/user_spec.rb	describe "when name is too long" do
+when password doesn't match confirmation	C:/Sites/What-to-Wear/spec/models/user_spec.rb	describe "when password doesn't match confirmation" do
+when password is not present	C:/Sites/What-to-Wear/spec/models/user_spec.rb	describe "when password is not present" do
+when signing in again	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "when signing in again" do
+when user_id is not present	C:/Sites/What-to-Wear/spec/models/item_spec.rb	describe "when user_id is not present" do
+when user_id is not present	C:/Sites/What-to-Wear/spec/models/item_spec.rb	describe "when user_id is not present" do
+with a password that's too short	C:/Sites/What-to-Wear/spec/models/user_spec.rb	describe "with a password that's too short" do
+with admin attribute set to 'true'	C:/Sites/What-to-Wear/spec/models/user_spec.rb	describe "with admin attribute set to 'true'" do
+with blank description	C:/Sites/What-to-Wear/spec/models/item_spec.rb	describe "with blank description" do
+with blank price	C:/Sites/What-to-Wear/spec/models/item_spec.rb	describe "with blank price" do
+with date bought nil	C:/Sites/What-to-Wear/spec/models/item_spec.rb	describe "with date bought nil" do
+with description that is too long	C:/Sites/What-to-Wear/spec/models/item_spec.rb	describe "with description that is too long" do
+with invalid information	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	describe "with invalid information" do
+with invalid information	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	describe "with invalid information" do
+with invalid information	C:/Sites/What-to-Wear/spec/requests/item_pages_spec.rb	describe "with invalid information" do
+with invalid information	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "with invalid information" do
+with invalid password	C:/Sites/What-to-Wear/spec/models/user_spec.rb	describe "with invalid password" do
+with valid information	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	describe "with valid information" do
+with valid information	C:/Sites/What-to-Wear/spec/requests/user_pages_spec.rb	describe "with valid information" do
+with valid information	C:/Sites/What-to-Wear/spec/requests/item_pages_spec.rb	describe "with valid information" do
+with valid information	C:/Sites/What-to-Wear/spec/requests/authentication_pages_spec.rb	describe "with valid information" do
+with valid password	C:/Sites/What-to-Wear/spec/models/user_spec.rb	describe "with valid password" do
