@@ -16,3 +16,6 @@
 
 # Ignore files from RubyMine
 /.idea
+
+# Ignore files from Redcar
+/.redcar
